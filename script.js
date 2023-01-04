@@ -1,31 +1,27 @@
-let username=prompt("Enter your name");
-alert("Hello" + username);
-
-
-function addition(){
+function addition() {
     let num1 = Number(prompt("Enter first value"));
     let num2 = Number(prompt("Enter second value"));
 
-    console.log(num1 + num2);
+    document.getElementById("result").innerText = num1 + " + " + num2 + " = " + num1 + num2;
 }
 
-function subtraction(){
-    let num1 =prompt("Enter first value");
-    let num2 =prompt("Enter second value");
+function subtraction() {
+    let num1 = prompt("Enter first value");
+    let num2 = prompt("Enter second value");
 
-    console.log (num1 - num2);
+    document.getElementById("result").innerText = num1 + " - " + num2 + " = " + num1 - num2;
 }
 
-function multiplication(){
-    let num1 =prompt("Enter first value");
-    let num2 =prompt("Enter second value");
+function multiplication() {
+    let num1 = prompt("Enter first value");
+    let num2 = prompt("Enter second value");
 
-    console.log (num1 * num2);
+    document.getElementById("result").innerHTML = num1 + " x " + num2 + " = " + num1 * num2;
 }
 
-function division(){
-    let num1 =prompt("Enter first value");
-    let num2 =prompt("Enter second value");
+function division() {
+    let num1 = prompt("Enter first value");
+    let num2 = prompt("Enter second value");
 
-    console.log (num1 / num2);
+    document.getElementById("result").innerHTML = num1 + " / " + num2 + " = " + num1 / num2;
 }
